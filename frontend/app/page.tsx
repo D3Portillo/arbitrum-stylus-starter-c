@@ -24,9 +24,10 @@ export default function Container() {
   const { openAccountModal } = useRkAccountModal()
   const { isConnected } = useAccount()
 
+  console.debug({ result, contenido: result?.data || "Cargando..." })
+
   return (
     <Fragment>
-      <p>{result.data || "Cargando..."}</p>
       <Navigation />
       <section className="max-w-2xl mt-12 mx-auto">
         <Tabs defaultValue="feed" className="w-full">

@@ -1,3 +1,6 @@
+// Purpose: Replace Arbitrum Stylus rust build with our own build wasm-file
+// Do not modify this file.
+
 use std::fs;
 use std::path::Path;
 

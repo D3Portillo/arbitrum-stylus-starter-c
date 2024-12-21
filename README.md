@@ -1,19 +1,8 @@
 # Arbitrum Stylus Starter Template for C
 
----
-
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FD3Portillo%2Farbitrum-stylus-starter-c&project-name=arbitrum-starter-c-frontend&repository-name=arbitrum-stylus-starter-c&root-directory=frontend)
 
-## Register and Storage Slots
-
-Storage slots are pretty similar to registers in 32bit architectures.
-Since both have:
-
-1. Fixed Size: Storage slots in Ethereum can hold exactly 32 bytes. Similar to how registers have a fixed size in assembly (e.g., 32-bit, 64-bit).
-
-2. Direct Addressing: Just as you access a specific register by its identifier (eax, r1), you access storage slots using their indexes: 0x01, 0x02.
-
-3. Explicit Management: Like assembly programming, developers must explicitly manage how storage slots are allocated and used. Miss assignment of memory/slots can cause data corruption.
+---
 
 ## Requisitos
 
@@ -44,3 +33,20 @@ Si no, podemos instalarlo con `brew install wabt`
 
 > [!TIP]
 > Cuando veamos este error significa que no hemos inicializado los modulos de git. Lo solventamos haciendo `git submodule update --init --recursive`
+
+---
+
+## Notas para el desarrollador
+
+### Register and Storage Slots
+
+Storage slots are pretty similar to registers in 32bit architectures.
+Since both have:
+
+1. Fixed Size: Storage slots in Ethereum can hold exactly 32 bytes. Similar to how registers have a fixed size in assembly (e.g., 32-bit, 64-bit).
+
+2. Direct Addressing: Just as you access a specific register by its identifier (eax, r1), you access storage slots using their indexes: 0x01, 0x02.
+
+3. Explicit Management: Like assembly programming, developers must explicitly manage how storage slots are allocated and used. Miss assignment of memory/slots can cause data corruption.
+
+Leer más [A gentle introduction: Stylus](https://docs.arbitrum.io/stylus/gentle-introduction)
