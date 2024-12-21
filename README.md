@@ -1,5 +1,9 @@
 # Arbitrum Stylus Starter Template for C
 
+---
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FD3Portillo%2Farbitrum-stylus-starter-c&project-name=arbitrum-starter-c-frontend&repository-name=arbitrum-stylus-starter-c&root-directory=frontend)
+
 ## Register and Storage Slots
 
 Storage slots are pretty similar to registers in 32bit architectures.
@@ -33,3 +37,10 @@ Si no, podemos instalarlo con `brew install wabt`
 
 - `make` para generar el archivo contract.wasm
 - `cargo stylus check --wasm-file ./contract.wasm -e https://sepolia-rollup.arbitrum.io/rpc` (si tenemos output en verde estamos listos 🚀🚀)
+
+---
+
+![](./reference.png)
+
+> [!TIP]
+> Cuando veamos este error significa que no hemos inicializado los modulos de git. Lo solventamos haciendo `git submodule update --init --recursive`

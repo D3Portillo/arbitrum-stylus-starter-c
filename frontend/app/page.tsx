@@ -51,7 +51,7 @@ export default function Container() {
           <TabsContent value="feed">
             <div className="grid grid-cols-3 gap-3">
               {Array.from({ length: 9 }).map((_, i) => (
-                <section className="p-4 border rounded-lg">
+                <section key={`post-${i}`} className="p-4 border rounded-lg">
                   <nav className="flex items-center gap-1">
                     <strong>0x03242</strong>
                     <span className="opacity-70">posted</span>
